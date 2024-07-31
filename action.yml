@@ -1,5 +1,8 @@
 name: YouTube Action
 description: GitHub action for YouTube, powered by yutu🐰
+branding:
+    icon: cast
+    color: red
 
 inputs:
   version:
