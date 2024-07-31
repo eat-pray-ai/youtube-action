@@ -1,5 +1,5 @@
-name: yutu
-description: yutu
+name: YouTube Action
+description: GitHub action for YouTube, powered by yutu🐰
 
 inputs:
   version:
