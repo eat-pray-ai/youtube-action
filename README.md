@@ -1,10 +1,10 @@
 # yutu
 
-A github action to use [yutu](https://eat-pray-ai/yutu).
+GitHub action for YouTube, powered by [yutu🐰](https://github.com/eat-pray-ai/yutu).
 
 ## Example
 
-See [actions/upload](../upload/README.md) for an example.
+See [youtube-uploader](https://github.com/eat-pray-ai/youtube-uploader) for an example.
 
 ## Inputs
 
@@ -45,25 +45,30 @@ Usage:
   yutu [command]
 
 Available Commands:
-  activity               list YouTube activities
-  auth                   authenticate with YouTube API
-  channel                manipulate YouTube channels
-  channelBanner          insert Youtube channelBanner
+  activity               List YouTube activities
+  auth                   Authenticate with YouTube API
+  caption                Manipulate YouTube captions
+  channel                Manipulate YouTube channels
+  channelBanner          Insert Youtube channelBanner
+  channelSection         Manipulate channel section
+  comment                Manipulate YouTube comments
+  commentThread          Manipulate YouTube comment threads
   completion             Generate the autocompletion script for the specified shell
   help                   Help about any command
-  i18nLanguage           list YouTube i18nLanguages
-  i18nRegion             list YouTube i18nRegions
-  member                 list YouTube members
-  membershipsLevel       list YouTube memberships levels
-  playlist               manipulate YouTube playlists
-  playlistItem           manipulate YouTube playlist items
+  i18nLanguage           List YouTube i18nLanguages
+  i18nRegion             List YouTube i18nRegions
+  member                 List YouTube members
+  membershipsLevel       List YouTube memberships levels
+  playlist               Manipulate YouTube playlists
+  playlistItem           Manipulate YouTube playlist items
   search                 Search for Youtube resources
-  subscription           manipulate YouTube subscriptions
+  subscription           Manipulate YouTube subscriptions
+  thumbnail              Set thumbnail for a video
   version                Show the version of yutu
-  video                  manipulate YouTube videos
-  videoAbuseReportReason list YouTube video abuse report reasons
-  videoCategory          list YouTube video categories
-  watermark              manipulate Youtube watermarks
+  video                  Manipulate YouTube videos
+  videoAbuseReportReason List YouTube video abuse report reasons
+  videoCategory          List YouTube video categories
+  watermark              Manipulate Youtube watermarks
 
 Flags:
   -h, --help   help for yutu
@@ -77,18 +82,18 @@ Use "yutu [command] --help" for more information about a command.
 
 ```shell
 ❯ yutu <command> --help
-❯ yutu playlist --help                                                                            
-manipulate YouTube playlists, such as insert, update, etc.
+❯ yutu playlist --help
+Manipulate YouTube playlists, such as insert, update, etc.
 
 Usage:
   yutu playlist [flags]
   yutu playlist [command]
 
 Available Commands:
-  delete      delete a playlist
-  insert      create a new playlist
-  list        list playlist's info
-  update      update an existing playlist
+  delete      Delete a playlist
+  insert      Create a new playlist
+  list        List playlist's info
+  update      Update an existing playlist
 
 Flags:
   -h, --help   help for playlist
@@ -102,7 +107,7 @@ Use "yutu playlist [command] --help" for more information about a command.
 
 ```shell
 ❯ yutu <command> <subcommand> -h
-❯ yutu subscription insert --help                                                 
+❯ yutu subscription insert --help
 Insert a subscription
 
 Usage:
