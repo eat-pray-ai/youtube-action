@@ -4,7 +4,18 @@ GitHub action for YouTube, powered by [yutu🐰](https://github.com/eat-pray-ai/
 
 ## Example
 
-See [youtube-uploader](https://github.com/eat-pray-ai/youtube-uploader) for an example.
+See [youtube-uploader](https://github.com/eat-pray-ai/youtube-uploader) for an detailed example.
+
+```yaml
+- uses: eat-pray-ai/yutu/actions/general@main
+  with:
+    version: 0.9.5
+    credential: ${{ secrets.YOUTUBE_CREDENTIAL }}
+    token: ${{ secrets.YOUTUBE_TOKEN }}
+    command: video
+    subcommand: insert
+    flags: '-f ${{ inputs.file }} -t ${{ inputs.title }} ${{ inputs.rest-flags }}'
+```
 
 ## Inputs
 
