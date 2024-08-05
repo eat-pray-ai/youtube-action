@@ -128,7 +128,13 @@ Flags:
   -c, --channelId string             ID of the channel to be subscribed
   -d, --description string           Description of the subscription
   -h, --help                         help for insert
+  -o, --output string                json, yaml or silent
   -s, --subscriberChannelId string   Subscriber's channel ID
   -t, --title string                 Title of the subscription
 ```
 
+## Outputs
+
+### `response`
+
+The response from yutu, in the format specified by `--output` flag, which can be `json`, `yaml` or `silent`.
